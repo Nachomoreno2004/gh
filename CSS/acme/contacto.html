@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto ACME</title>
+    <style>
+        .titulo {
+            color: blue;
+            text-align: center;
+        }
+        .titulo1 {
+            color: rgb(212, 17, 212);
+            text-align: left;
+        }
+        .descripcion {
+            font-size: 18px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="titulo">Contacto ACME</h1>
+    <p class="descripcion">¿Tienes alguna pregunta? ¡No dudes en contactarnos!</p>
+    <div style="border: 2px solid aquamarine; padding: 10px; width: 300px;">
+        <h2 class="titulo1">Formulario de Contacto</h2>
+        <form action="enviar_formulario.php" method="post">
+            <label for="nombre">Nombre:</label><br>
+            <input type="text" id="nombre" name="nombre" required><br><br>
+            
+            <label for="email">Correo Electrónico:</label><br>
+            <input type="email" id="email" name="email" required><br><br>
+            
+            <label for="mensaje">Mensaje:</label><br>
+            <textarea id="mensaje" name="mensaje" rows="4" required></textarea><br><br>
+            
+            <input type="submit" value="Enviar">
+        </form>
+    </div>
+    <br>
+    <div style="border: 2px solid aquamarine; padding: 10px; width: 300px;">
+        <h2 class="titulo1">Información de Contacto</h2>
+    <p><strong>Dirección:</strong> Calle Principal, 123 - Ciudad, País</p>
+    <p><strong>Teléfono:</strong> +1 (123) 456-7890</p>
+    <p><strong>Correo Electrónico:</strong> info@acme.com</p>
+    </div>
+</body>
+</html>

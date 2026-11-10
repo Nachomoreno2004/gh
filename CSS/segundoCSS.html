@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Segundo CSS</title>
+    <style>
+        ul > li {
+            color: red;
+            font-size: 20px;
+        }
+
+        h2 + p {
+            color: green;
+        }
+
+        input[type="text"] {
+            border: 3px solid red;
+        }
+        .parrafo-verde {
+            color: green;
+        }
+        .parrafo-verde:hover{
+            font-weight: bold;
+            font-size: 30px;
+            background-image: url(kikorivera.jpg);
+            background-size: 100px 100px;
+            background-size: cover;
+           background-position: center center;
+             background-attachment: fixed; 
+              margin: 0;
+             height: 100vh;
+         }
+        .parrafo-rojo {
+            color: red;
+        }
+        .parrafo-rojo:first-letter {
+            font-weight: bold;
+            font-size: 2.5em;
+            color: blue;
+        }
+        input.focus {
+            border: 3px red dashed;
+        }
+        tr:nth-child(odd) {
+            background-color: yellow;
+        }
+        .bloque {
+            min-width: 900px;
+            width: 900px;
+            height: 50%;
+            border: 4px solid red;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+    <ul class="menu">
+        <li>Primera opción</li>
+        <ol>
+            <li>Primera subopción de la primera opción</li>
+            <li>Segunda subopción de la primera opción</li>
+        </ol>
+        <li>Segunda opción</li>
+    </ul>
+
+    <p>Mi primer párrafo</p>
+
+    <h2>Esto es un encabezado de segundo nivel</h2>
+    <p>Mi segundo párrafo</p>
+    <p>Mi tercer párrafo</p>
+
+    <form>
+        <label for="nombre">Nombre:</label>
+        <input type="text" name="nombre" placeholder="Aquí escribe tu nombre">
+        <label for="edad">Edad:</label>
+        <input type="number" step="5" id="edad" name="edad">
+        <input type="submit" value="Enviar">
+    </form>
+
+    <p class="parrafo-verde">Esto va de color verde</p>
+    <p class="parrafo-rojo">Esto va de color rojo</p>
+
+    <table>
+        <tr>
+            <td>111111111</td><td>222222222</td><td>333333333</td>
+        </tr>
+        <tr>
+            <td>444444444</td><td>555555555</td><td>666666666</td>
+        </tr>
+        <tr>
+            <td>777777777</td><td>888888888</td><td>999999999</td>
+        </tr>
+    </table>
+
+    <div class="bloque">
+       cualquier cosa
+         <img src="kikorivera.jpg" style="margin: 0px auto; display: block;" width="100%">
+    </div>
+
+  
+</body>
+</html>
